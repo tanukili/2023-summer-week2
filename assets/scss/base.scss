@@ -12,10 +12,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 
 // Layout:自製格線
 .container {
-  max-width: var(--total-width);
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 .grid-3 {
@@ -80,6 +84,9 @@ img {
 // Utilies: display, flex
 .d-flex {
   display: flex;
+}
+.d-block {
+  display: block;
 }
 
 .flex-column {
@@ -163,6 +170,9 @@ h3, .h3 {
 
 .text-center {
   text-align: center;
+}
+.text-end {
+  text-align: end;
 }
 
 .fs-1 {
