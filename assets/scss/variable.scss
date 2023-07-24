@@ -1,4 +1,21 @@
+// variable
 :root {
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+  --primary: rgba(0, 255, 163, 1);
+  --secomdary: rgba(21, 22, 29, 1);
+  --light: rgba(209, 209, 209, 1);
+  --gray: rgba(227, 227, 227, 1);
+  --gradient-top: rgba(5, 0, 20, 1);
+  --gradient-bottom: rgba(1, 2, 30, 0.89);
   --font-family: 'Bruno Ace SC', -apple-system, "segoe UI", "Microsoft JhengHei", sans-serif;
-  --test: red;
+  --line-height: 1.5;
+  --container-width: 1296px;
+  --gutters: 24px;
+  --total-width: calc(var(--container-width) + var(--gutters));
+}
+
+// 自製cols
+@mixin grid($cols) {
+  width: calc(var(--total-width) * ($cols / 12) - var(--gutters));
 }
