@@ -70,7 +70,7 @@ ol { // 調整 ol 樣式（參考：金魚懂css；https://web.dev/i18n/zh/css-m
   }
   &::after {
     content: " ";
-    background-image: url('../assets/images/arrow_outward.png');
+    background-image: url('/assets/images/arrow_outward.png');
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
@@ -81,7 +81,7 @@ ol { // 調整 ol 樣式（參考：金魚懂css；https://web.dev/i18n/zh/css-m
     background: var(--black);
     color: var(--white);
     &::after {
-    background-image: url('../assets/images/arrow_outward-white.png');
+    background-image: url('/assets/images/arrow_outward-white.png');
     }
     &:hover {
       box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
