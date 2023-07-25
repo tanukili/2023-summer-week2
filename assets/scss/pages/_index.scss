@@ -5,6 +5,25 @@
   background-size: cover;
 }
 
+.arr-icon {
+  background-image: url('../images/trending_flat_black_24dp\ 1.png');
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+}
+
 .sns {
   max-width: 162px;
+  height: 162px;
+  border-radius: 2.5rem;
+  &:hover {
+    box-shadow: 0 0 1rem 0.25rem rgba(144, 148, 255, 0.9), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  }
+  // 微調圖片
+  .img-fixed {
+    max-width: 110%;
+    height: auto;
+    object-position: -4px -4px;
+  }
 }
