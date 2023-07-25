@@ -16,7 +16,7 @@ a {
   text-decoration: none;
   color: var(--white);
 }
-ol {
+ol { // 調整 ol 樣式（參考：金魚懂css；https://web.dev/i18n/zh/css-marker-pseudo-element/）
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
   li::marker {
@@ -138,9 +138,6 @@ ol {
   margin-top: 2.5rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
 .mb-2 {
   margin-bottom: 1rem;
 }
@@ -151,9 +148,9 @@ ol {
   margin-bottom: 2.25rem;
 }
 
-.me-0 {
-  margin-right: 0;
-}
+// .me-0 {
+//   margin-right: 0;
+// }
 .me-2 {
   margin-right: 1rem;
 }
@@ -167,6 +164,10 @@ ol {
   margin-right: 1.25rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 .my-6 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
