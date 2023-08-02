@@ -14,9 +14,3 @@
   --gutters: 24px;
   --total-width: calc(var(--container-width) + var(--gutters));
 }
-
-// 自製cols
-@mixin grid($cols) {
-  width: calc(var(--total-width) * ($cols / 12) - var(--gutters));
-  flex: none; // 不進行縮放，等於 0 0 auto
-}

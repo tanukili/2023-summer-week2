@@ -1,0 +1,30 @@
+// 全站設定
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+ol { // 調整 ol 樣式（參考：金魚懂css；https://web.dev/i18n/zh/css-marker-pseudo-element/）
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  li::marker {
+    font-size: 1.25rem;
+    content: "0"counter(list-item) ;
+  }
+}

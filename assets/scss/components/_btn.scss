@@ -1,0 +1,32 @@
+.btn {
+  background: var(--white);
+  color: var(--black);
+  font-family: inherit;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(225, 225, 225, 0.7);
+  }
+  &::after {
+    content: " ";
+    background-image: url('../images/arrow_outward.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+  }
+  &.btn-dark {
+    background: var(--black);
+    color: var(--white);
+    &::after {
+    background-image: url('../images/arrow_outward-white.png');
+    background-repeat: no-repeat;
+    }
+    &:hover {
+      box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
+    }
+  }
+}

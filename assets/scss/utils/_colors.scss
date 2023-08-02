@@ -1,0 +1,19 @@
+.bg-white {
+  background: var(--white);
+}
+.bg-gradient {
+  background: linear-gradient(var(--gradient-top), var(--gradient-bottom));
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.text-secomdary {
+  color: var(--secomdary);
+}
+.text-black {
+  color: var(--black);
+}
+.text-light {
+  color: var(--light);
+}

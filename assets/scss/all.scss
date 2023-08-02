@@ -1,7 +1,21 @@
-@import './variable.scss';
-@import './cssReset.scss';
+@import './base/variable.scss';
+@import './base/reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-@import './base.scss';
+@import './/base/base.scss';
 
+// components
+@import './components/btn.scss';
+@import './components/card.scss';
+
+// utis
+@import './utils/colors.scss';
+@import './utils/flex.scss';
+@import './utils/spacing.scss';
+@import './utils/text.scss';
+
+// layout
+@import './layout/grid-sysrem.scss';
+
+// pages
 @import './pages/index.scss';

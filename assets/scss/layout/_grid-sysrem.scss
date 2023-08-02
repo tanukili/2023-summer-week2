@@ -1,0 +1,35 @@
+// 自製cols
+@mixin grid($cols) {
+  width: calc(var(--total-width) * ($cols / 12) - var(--gutters));
+  flex: none; // 不進行縮放，等於 0 0 auto
+}
+// Layout:自製格線
+.container {
+  max-width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+.grid-3 {
+  @include grid(3);
+}
+.grid-5 {
+  @include grid(5);
+}
+.grid-6 {
+  @include grid(6);
+}
+.grid-7 {
+  @include grid(7);
+}
+.add-gutters {
+  display: flex;
+  & > * {
+    margin-right: var(--gutters);
+    &:last-child {
+    margin-right: 0;
+    }
+    &.gy-1 {
+    margin-top: var(--gutters);
+    }
+  }
+}
