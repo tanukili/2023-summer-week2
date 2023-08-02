@@ -1,5 +1,6 @@
 .bg-img {
   background-image: url('../images/background-img.png');
+  background-repeat: no-repeat;
   width: 100%;
   height: auto;
   background-size: cover;
@@ -7,6 +8,7 @@
 
 .arr-icon {
   background-image: url('../images/trending_flat_black_24dp\ 1.png');
+  background-repeat: no-repeat;
   display: inline-block;
   vertical-align: top;
   width: 100px;

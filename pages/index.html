@@ -11,15 +11,15 @@
 
     <div class="add-gutters container align-items-center my-7">
       <img src="../assets/images/people.png" alt="photo">
-      <div class="grid-6 d-flex flex-column">
+      <div class="grid-6 d-flex flex-column" id="name">
         <p class="h2">Hi<br>I’m a front-end developer</p>
         <h1 class="text-end text-primary">William</h1>
-        <buttun class="btn align-self-end">contact me</buttun>
+        <button class="btn align-self-end">contact me</button>
       </div>
     </div>
     <div class="bg-img">
       <div class="add-gutters container py-9">
-        <div>
+        <div class="grid-5">
           <h2 class="mb-5">Introduction</h2>
           <p class="fs-1 mb-4">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
           <div class="d-flex">
@@ -28,9 +28,17 @@
             <img src="../assets/images/sparkle-sm.png" alt="sparkle-sm-3">
           </div>
         </div>
-        <img src="../assets/images/sparkle.png" alt="sparkle">
-        <img src="../assets/images/photographer.png" alt="photographer">
-        <img src="../assets/images/people-2.png" alt="people-2">
+        <ul class="add-gutters">
+          <li>
+            <img src="../assets/images/sparkle.png" alt="sparkle">
+          </li>
+          <li>
+            <img src="../assets/images/photographer.png" alt="photographer">
+          </li>
+          <li>
+            <img src="../assets/images/people-2.png" alt="people-2">
+          </li>
+        </ul>
       </div>
     </div>
     <div class="bg-white">
@@ -59,23 +67,29 @@
         </div>
       </div>
     </div>
-    <div class="bg-gradient">
+    <div class="bg-gradient" id="contact-me">
       <div class="container d-flex justify-content-between align-items-center py-8">
         <p class="h2">
           CONTACT ME
           <span class="arr-icon"></span>
         </p>
-        <div class="d-flex">
-          <a class="sns" href="#">
-            <img src="../assets/images/discord.png" alt="discord">
-          </a>
-          <a class="sns mx-3" href="#">
-            <img src="../assets/images/instagram.png" alt="ig" class="img-fixed">
-          </a>
-          <a class="sns" href="#">
-            <img src="../assets/images/message.png" alt="message" class="img-fixed">
-          </a>
-        </div>
+        <ul class="d-flex">
+          <li class="sns">
+            <a class="d-block" href="https://discord.com/" target="_blank">
+              <img src="../assets/images/discord.png" alt="discord">
+            </a>
+          </li>
+          <li class="sns mx-3">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/images/instagram.png" alt="ig" class="img-fixed">
+            </a>
+          </li>
+          <li class="sns">
+            <a href="https://www.messenger.com/" target="_blank">
+              <img src="../assets/images/message.png" alt="message" class="img-fixed">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="bg-white">
@@ -88,7 +102,7 @@
               <img src="../assets/images/Rectangle 15.png" alt="rectangle15">
               <div class="grid-6 d-flex flex-column justify-content-between">
                 <p class="text-secomdary">I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-                <buttun class="btn btn-dark align-self-start">SEE MORE</buttun>
+                <button class="btn btn-dark align-self-start">SEE MORE</button>
               </div>
             </div>
             <div class="add-gutters">
